@@ -1,18 +1,12 @@
 #!/usr/bin/env node
 
-var generateMaze = require('../index');
+var formatTextToTanzaku = require('../index');
 
 var args = process.argv.slice(2);
-var width = Number(args[0]);
-var height = Number(args[1]);
+var originalText = args[0];
 
-if (
-  isNaN(width) ||
-  width <= 0 ||
-  isNaN(height) ||
-  height <= 0
-) {
+if (originalText === undefined) {
   throw new Error('Invalid args');
 }
 
-console.log(generateMaze([width, height]).toText());
+console.log(formatTextToTanzaku(originalText));
