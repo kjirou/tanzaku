@@ -18,11 +18,11 @@ describe('tanzaku', function() {
 
   it('should format zenkaku-text', function() {
     var actual = formatTextToTanzaku('こんにちわ、世界！');
-    assert.strictEqual(actual, konnichiwaSekaiTanzaku);
+    assert.strictEqual(konnichiwaSekaiTanzaku, actual);
   });
 
   it('should format hankaku-text', function() {
     var actual = formatTextToTanzaku('Hello World!');
-    assert.strictEqual(actual, helloWorldTanzaku);
+    assert.strictEqual(helloWorldTanzaku, actual);
   });
 });
