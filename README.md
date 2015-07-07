@@ -1,7 +1,6 @@
 # tanzaku
 
 [![npm version](https://badge.fury.io/js/tanzaku.svg)](http://badge.fury.io/js/tanzaku)
-[![Build Status](https://travis-ci.org/kjirou/tanzaku.svg?branch=master)](https://travis-ci.org/kjirou/tanzaku)
 
 Format text like japanese TANZAKU
 
