@@ -10,8 +10,8 @@
     "url": "https://github.com/kjirou/tanzaku/issues"
   },
   "devDependencies": {
-    "fixpack": "^2.2.0",
-    "mocha": "^2.2.5"
+    "fixpack": "2.2.0",
+    "mocha": "2.2.5"
   },
   "homepage": "https://github.com/kjirou/tanzaku#readme",
   "keywords": [
