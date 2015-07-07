@@ -1,0 +1,30 @@
+{
+  "name": "tanzaku",
+  "description": "Format text like japanese TANZAKU",
+  "version": "1.0.0",
+  "author": "kjirou",
+  "bin": {
+    "tanzaku": "./bin/tanzaku"
+  },
+  "bugs": {
+    "url": "https://github.com/kjirou/tanzaku/issues"
+  },
+  "devDependencies": {
+    "fixpack": "^2.2.0",
+    "mocha": "^2.2.5"
+  },
+  "homepage": "https://github.com/kjirou/tanzaku#readme",
+  "keywords": [
+    "generator",
+    "text"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjirou/tanzaku.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
