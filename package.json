@@ -9,6 +9,9 @@
   "bugs": {
     "url": "https://github.com/kjirou/tanzaku/issues"
   },
+  "dependencies": {
+    "moji": "0.3.1"
+  },
   "devDependencies": {
     "fixpack": "2.2.0",
     "mocha": "2.2.5"
