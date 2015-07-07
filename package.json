@@ -1,7 +1,7 @@
 {
   "name": "tanzaku",
   "description": "Format text like japanese TANZAKU",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "kjirou",
   "bin": {
     "tanzaku": "./bin/tanzaku"
