@@ -30,7 +30,7 @@ var formatTextToTanzaku = function formatTextToTanzaku(text) {
       if (chr in SPECIAL_CHARACTERS) {
         chr = SPECIAL_CHARACTERS[chr];
       }
-      return '┃' + chr + '┃';
+      return '\u2503' + chr + '\u2503';
     })
   ;
 
