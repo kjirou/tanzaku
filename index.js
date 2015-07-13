@@ -17,6 +17,8 @@ var SPECIAL_CHARACTERS = {
   '\u3002': '\ufe12',
   // 全角ハイフン
   '\u30fc': '\uff5c',
+  // 全角ハイフンマイナス
+  '\uff0d': '\uff5c',
   // "！" を中央寄せに
   '\uff01': '\ufe15'
 };
