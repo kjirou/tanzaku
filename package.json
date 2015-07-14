@@ -14,7 +14,8 @@
   },
   "devDependencies": {
     "fixpack": "2.2.0",
-    "mocha": "2.2.5"
+    "mocha": "2.2.5",
+    "rewire": "2.3.4"
   },
   "homepage": "https://github.com/kjirou/tanzaku#readme",
   "keywords": [
