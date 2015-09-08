@@ -1,3 +1,5 @@
+/* @flow */
+
 var Moji = require('moji');
 
 
@@ -21,14 +23,14 @@ var SPECIAL_CHARACTERS = {
   '\uff01': '\ufe15'
 };
 
-var convertToZenkakuOnly = function convertToZenkakuOnly(text) {
+var convertToZenkakuOnly = function convertToZenkakuOnly(text/*: string*/)/*: string*/ {
   return new Moji(text).convert(['HS', 'ZS'], ['HE', 'ZE'], ['HK', 'ZK']).result;
 };
 
 // Against surrogate pair
 // Ref) http://qiita.com/YusukeHirao/items/2f0fb8d5bbb981101be0
 var ONE_CHARACTER_MATCHER = /[\ud800-\udbff][\udc00-\udfff]|[^\ud800-\udfff]/g;
-var stringToArray = function stringToArray(str) {
+var stringToArray = function stringToArray(str/*: string*/)/*: Array<string>*/ {
   return str.match(ONE_CHARACTER_MATCHER) || [];
 };
 
@@ -36,7 +38,7 @@ var stringToArray = function stringToArray(str) {
  * @param {string} text
  * @return {Array}
  */
-var convertToTanzakuCharacters = function convertToTanzakuCharacters(text) {
+var convertToTanzakuCharacters = function convertToTanzakuCharacters(text/*: string*/)/*: Array<string>*/ {
   var zenkakuText = convertToZenkakuOnly(text);
   return stringToArray(zenkakuText)
     .map(function(chr) {
@@ -48,7 +50,7 @@ var convertToTanzakuCharacters = function convertToTanzakuCharacters(text) {
   ;
 };
 
-var formatTextToTanzaku = function formatTextToTanzaku(text) {
+var formatTextToTanzaku = function formatTextToTanzaku(text/*: string*/)/*: string*/ {
   var lines = convertToTanzakuCharacters(text)
     .map(function(chr) {
       return '\u2503' + chr + '\u2503';

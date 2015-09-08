@@ -40,6 +40,15 @@ console.log(tanzaku('Hello World!'));
 ```
 
 
+## Development
+```bash
+git clone git@github.com:kjirou/tanzaku.git
+cd ./tanzaku
+npm install
+brew install flow  # In the case of Mac OS X (optional)
+```
+
+
 ## Refs
 短冊メーカー(Tanzaku Generator):
 http://tanzaku.ch3cooh.jp/
